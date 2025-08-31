@@ -1,0 +1,52 @@
+.weather-card {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.weather-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.condition {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.details {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.details p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.welcome-message, .error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  color: #555; /* Softer color */
+  font-style: italic;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-style: normal;
+  font-weight: 500;
+}

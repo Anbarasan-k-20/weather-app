@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Changed to softer, more professional gradient */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  min-height: 100vh;
+  display: flex;
+  /* Ensure #root fills the viewport and centers content */
+  #root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.app-container {
+  max-width: 500px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95); /* White background with slight transparency */
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.app-container h1 {
+  color: #2c3e50; /* Dark blue-gray instead of white */
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: none; /* Removed text shadow */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .app {
+    padding: 1.5rem;
+  }
+  
+  .app-container {
+    padding: 2rem;
+  }
+  
+  .app-container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+  }
+  
+  .app-container {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .app-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-container input {
+    min-width: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .search-container button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
